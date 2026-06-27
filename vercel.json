@@ -37,6 +37,6 @@
         "OPENWEATHER_LONGITUDE": "106.7647475",
         "OPENWEATHER_API_URL": "https://api.openweathermap.org/data/2.5/weather",
         "OPENWEATHER_TIMEOUT": "5",
-        "LSTM_GENERATE_URL": "https://piwpiu15-pertanian-presisi.hf.space/generate-prediksi?days=300"
+        "LSTM_GENERATE_URL": "https://piwpiu15-pertanian-presisi.hf.space/generate-prediksi?days=7"
   }
 }
