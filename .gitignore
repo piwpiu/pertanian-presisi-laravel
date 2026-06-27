@@ -5,7 +5,6 @@
 /auth.json
 
 # Dependencies
-/vendor
 /node_modules
 
 # Laravel runtime files
