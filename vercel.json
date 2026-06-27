@@ -11,5 +11,32 @@
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
     "buildCommand": "vite build",
-    "outputDirectory": "public"
+    "outputDirectory": "public",
+    "env": {
+        "APP_ENV": "production",
+        "APP_DEBUG": "false",
+        "APP_KEY": "base64:fdWzCjvROrujhE/8gfi+KOng47oXbXZhLGXNNKbOtyo=",
+        "APP_CONFIG_CACHE": "/tmp/config.php",
+        "APP_EVENTS_CACHE": "/tmp/events.php",
+        "APP_PACKAGES_CACHE": "/tmp/packages.php",
+        "APP_ROUTES_CACHE": "/tmp/routes.php",
+        "APP_SERVICES_CACHE": "/tmp/services.php",
+        "VIEW_COMPILED_PATH": "/tmp",
+        "BCRYPT_ROUNDS": "12",
+        "DB_CONNECTION": "pgsql",
+        "DB_DATABASE": "postgres",
+        "DB_USERNAME": "postgres.eidzzzhwciohodjnpqxc",
+        "DB_PASSWORD": "lZYf0EYpHbef21up",
+        "DB_HOST": "aws-1-ap-northeast-1.pooler.supabase.com",
+        "DB_PORT": "6543",
+        "CACHE_DRIVER": "array",
+        "LOG_CHANNEL": "stderr",
+        "SESSION_DRIVER": "cookie",
+        "OPENWEATHER_API_KEY": "11d11c54866fec02add09b22351df196",
+        "OPENWEATHER_LATITUDE": "-6.5728619",
+        "OPENWEATHER_LONGITUDE": "106.7647475",
+        "OPENWEATHER_API_URL": "https://api.openweathermap.org/data/2.5/weather",
+        "OPENWEATHER_TIMEOUT": "5",
+        "LSTM_GENERATE_URL": "https://piwpiu15-pertanian-presisi.hf.space/generate-prediksi?days=300"
+  }
 }
