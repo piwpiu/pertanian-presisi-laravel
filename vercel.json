@@ -12,6 +12,10 @@
       "dest": "/public/build/$1"
     },
     {
+      "src": "/assets/(.*)",
+      "dest": "/public/assets/$1"
+    },
+    {
       "src": "/favicon.ico",
       "dest": "/public/favicon.ico"
     },
@@ -24,7 +28,7 @@
       "dest": "/api/index.php"
     }
   ],
+  "installCommand": "composer install --no-dev --optimize-autoloader && npm install",
   "buildCommand": "npm run build",
-  "outputDirectory": "public",
-  "installCommand": "npm install"
+  "outputDirectory": "public"
 }
