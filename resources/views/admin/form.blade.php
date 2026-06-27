@@ -16,7 +16,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $isEdit ? 'Edit' : 'Tambah' }} Data - Admin Pertanian Presisi Padi</title>
-    @vite(['resources/css/admin.css'])
+        @php
+        $manifestPath = public_path('build/manifest.json');
+        if (file_exists($manifestPath)) {
+            $manifest = json_decode(file_get_contents($manifestPath), true);
+        } else {
+            $manifest = [];
+        }
+
+        $cssFile = $manifest['resources/css/app.css']['file'] ?? null;
+        $jsFile = $manifest['resources/js/app.js']['file'] ?? null;
+        $baseUrl = asset('build');
+    @endphp
+
+    @if ($cssFile)
+        <link rel="stylesheet" href="{{ $baseUrl . '/' . $cssFile }}">
+    @endif
 </head>
 <body>
     <header class="topbar">
