@@ -1,0 +1,57 @@
+# Environment / secrets
+.env
+.env.*
+!.env.example
+/auth.json
+
+# Dependencies
+/vendor
+/node_modules
+
+# Laravel runtime files
+/storage/*.key
+/storage/logs/*.log
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+!/storage/framework/.gitignore
+!/storage/framework/cache/.gitignore
+!/storage/framework/sessions/.gitignore
+!/storage/framework/testing/.gitignore
+!/storage/framework/views/.gitignore
+/bootstrap/cache/*.php
+/bootstrap/cache/*.tmp
+!/bootstrap/cache/.gitignore
+
+# Build output
+/public/hot
+/public/storage
+/public/build
+
+# Local database / uploaded datasets
+/database/*.sqlite
+/database/*.sqlite-*
+*.xlsx
+*.xls
+*.csv
+
+# Testing / logs
+.phpunit.result.cache
+.phpunit.cache
+*.log
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+/.idea
+/.vscode
+/.fleet
+/.nova
+/.zed
+.phpactor.json
+
+# Archives
+*.zip
+*.rar
+*.7z
